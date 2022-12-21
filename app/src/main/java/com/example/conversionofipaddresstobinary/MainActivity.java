@@ -24,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
          final int[] temp = new int[1];
          final int[] binaryConvertedValue = new int[7];
 
-        TextView firstValTextView = (TextView) findViewById(R.id.value1);
-        TextView secondValTextView = (TextView) findViewById(R.id.value2);
-        TextView thirdValTextView = (TextView) findViewById(R.id.value3);
-        TextView fourthValTextView = (TextView) findViewById(R.id.value4);
+        EditText firstValTextView = (EditText) findViewById(R.id.value1);
+//        EditText secondValTextView = (EditText) findViewById(R.id.value2);
+//        EditText thirdValTextView = (EditText) findViewById(R.id.value3);
+//        EditText fourthValTextView = (EditText) findViewById(R.id.value4);
 //        firstValTextView = Integer.parseInt(firstValTextView);
 //        secondValTextView = Integer.parseInt(secondValTextView);
 //        thirdValTextView = Integer.parseInt(thirdValTextView);
@@ -98,9 +98,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-                secondValueOfIP[0] = Integer.parseInt((String) secondValTextView.getText());
-                thirdValueOfIP[0] = Integer.parseInt((String) thirdValTextView.getText());
-                fourthValueOfIP[0] = Integer.parseInt((String) fourthValTextView.getText());
+//                secondValueOfIP[0] = Integer.parseInt((String) secondValTextView.getText());
+//                thirdValueOfIP[0] = Integer.parseInt((String) thirdValTextView.getText());
+//                fourthValueOfIP[0] = Integer.parseInt((String) fourthValTextView.getText());
             }
         });
 
