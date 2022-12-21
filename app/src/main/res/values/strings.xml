@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">conversion of IP Address to Binary</string>
+    <string name="ip_conversion_to_binary_0_and_1">IP Conversion to Binary (0 and 1)</string>
+    <string name="ip_conversion" />
+    <string name="_to_binary_0_and_1" />
+    <string name="ip_conversions">IP conversion</string>
+    <string name="to_binary_0_and_1" />
+    <string name="to_binary">To Binary</string>
+    <string name="enter_values_here">Enter Values Here</string>
+    <string name="_192">192</string>
+    <string name="_168">168</string>
+    <string name="_9">9</string>
+    <string name="_1">1</string>
+</resources>
