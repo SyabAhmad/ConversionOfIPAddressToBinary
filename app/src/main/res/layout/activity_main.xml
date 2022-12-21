@@ -121,9 +121,9 @@
     <Button
         android:id="@+id/btn"
         android:layout_width="172dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:gravity="center_horizontal"
-        android:text="Find Binary"
+        android:text="@string/find_binary"
         android:textAlignment="center"
 
         app:layout_constraintBottom_toBottomOf="parent"

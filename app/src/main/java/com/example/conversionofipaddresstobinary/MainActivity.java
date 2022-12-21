@@ -43,46 +43,46 @@ public class MainActivity extends AppCompatActivity {
                 firstValueOfIP[0] = Integer.parseInt((String) firstValTextView.getText().toString());
 
                 int firstvalue = Integer.parseInt(String.valueOf(firstValueOfIP[0]));
-                if (firstValueOfIP[0] < defaultValues[0])
+                if (firstvalue < defaultValues[0])
                 {
                     temp[0] = firstValueOfIP[0]-defaultValues[0];
                     binaryConvertedValue[0] = 1;
                 }
-                else if (firstValueOfIP[0] < defaultValues[1])
+                else if (firstvalue < defaultValues[1])
                 {
                     binaryConvertedValue[0] = 0;
                     temp[0] = firstValueOfIP[0]-defaultValues[1];
                     binaryConvertedValue[1] = 1;
-                } else if(firstValueOfIP[0] < defaultValues[2])
+                } else if(firstvalue < defaultValues[2])
                 {
                     binaryConvertedValue[1] = 0;
                     temp[0] = firstValueOfIP[0]-defaultValues[2];
                     binaryConvertedValue[2] = 1;
                 }
-                else if(firstValueOfIP[0] < defaultValues[3])
+                else if(firstvalue < defaultValues[3])
                 {
                     binaryConvertedValue[2] = 0;
                     temp[0] = firstValueOfIP[0]-defaultValues[3];
                     binaryConvertedValue[3] = 1;
                 }
-                else if(firstValueOfIP[0] < defaultValues[4])
+                else if(firstvalue < defaultValues[4])
                 {
                     binaryConvertedValue[3] = 0;
                     temp[0] = firstValueOfIP[0]-defaultValues[4];
                     binaryConvertedValue[4] = 1;
                 }
-                else if(firstValueOfIP[0] < defaultValues[5])
+                else if(firstvalue < defaultValues[5])
                 {
                     binaryConvertedValue[4] = 0;
                     temp[0] = firstValueOfIP[0]-defaultValues[5];
                     binaryConvertedValue[5] = 1;
                 }
-                else if(firstValueOfIP[0] < defaultValues[6])
+                else if(firstvalue < defaultValues[6])
                 {
                     binaryConvertedValue[5] = 0;
                     temp[0] = firstValueOfIP[0]-defaultValues[6];
                     binaryConvertedValue[6] = 1;
-                }else if(firstValueOfIP[0] < defaultValues[7])
+                }else if(firstvalue < defaultValues[7])
                 {
                     binaryConvertedValue[6] = 0;
                     temp[0] = firstValueOfIP[0]-defaultValues[7];
