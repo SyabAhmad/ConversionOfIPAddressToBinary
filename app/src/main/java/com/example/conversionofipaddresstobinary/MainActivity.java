@@ -79,9 +79,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        Button btn = (Button) findViewById(R.id.btn1);
+        Button btn1 = (Button) findViewById(R.id.btn1);
         // Convert the IP address to an InetAddress object
-        btn.setOnClickListener(new View.OnClickListener() {
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
