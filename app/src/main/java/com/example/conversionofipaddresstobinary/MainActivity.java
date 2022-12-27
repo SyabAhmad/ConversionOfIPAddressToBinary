@@ -2,36 +2,90 @@ package com.example.conversionofipaddresstobinary;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
-import java.net.InetAddress;
-
-import java.net.UnknownHostException;
-import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
-    int IPaddress;
-    public String StringFinalMessage;
+
+    @SuppressLint("SetTextI18n")
+    void showresult(){
+        EditText ip0 = (EditText) findViewById(R.id.value);
+        int ip0value = Integer.parseInt(String.valueOf(ip0.getText()));
+        EditText ip1 = (EditText) findViewById(R.id.value1);
+        int ip1value = Integer.parseInt(String.valueOf(ip1.getText()));
+        EditText ip2 = (EditText) findViewById(R.id.value2);
+        int ip2value = Integer.parseInt(String.valueOf(ip2.getText()));
+        EditText ip3 = (EditText) findViewById(R.id.value3);
+        int ip3value = Integer.parseInt(String.valueOf(ip3.getText()));
+
+
+        TextView range1 = (TextView) findViewById(R.id.range);
+        TextView class1 = (TextView) findViewById(R.id.classes);
+
+
+        ///find range and class
+
+        if (ip0value>=1 && ip0value <=127)
+        {
+            range1.setText("1.0.0.0 to 127.255.255.255");
+            class1.setText("Class A");
+        }else if (ip0value>=128 && ip0value <=1191)
+        {
+            range1.setText("128.0.0.0 to 191.255.255.255");
+            class1.setText("Class B");
+        }
+        else if (ip0value>=192 && ip0value <=223)
+        {
+            range1.setText("192.0.0.0 to 223.255.255.255");
+            class1.setText("Class C");
+        }
+        else if (ip0value>=224 && ip0value <=239)
+        {
+            range1.setText("224.0.0.0 to 239.255.255.255");
+            class1.setText("Class D");
+        }
+        else if (ip0value>=240 && ip0value <=255)
+        {
+            range1.setText("240.0.0.0 to 255.255.255.255");
+            class1.setText("Class E");
+        }
+
+        ///converting to string and binary
+        String ConvertedIP0Value = Integer.toBinaryString(ip0value);
+        String ConvertedIP1Value = Integer.toBinaryString(ip1value);
+        String ConvertedIP2Value = Integer.toBinaryString(ip2value);
+        String ConvertedIP3Value = Integer.toBinaryString(ip3value);
+
+        TextView result1 = (TextView) findViewById(R.id.resultFor1);
+        TextView result2 = (TextView) findViewById(R.id.resultFor2);
+        TextView result3 = (TextView) findViewById(R.id.resultFor3);
+        TextView result4 = (TextView) findViewById(R.id.resultFor4);
+
+        /// displaying result
+        result1.setText(ConvertedIP0Value);
+        result2.setText(ConvertedIP1Value);
+        result3.setText(ConvertedIP2Value);
+        result4.setText(ConvertedIP3Value);
+
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView userinput = (TextView) findViewById(R.id.value1);
-        TextView result1 = (TextView) findViewById(R.id.resultFor1);
 
-        String input = userinput.toString();
+
         Button btn = (Button) findViewById(R.id.btn1);
         // Convert the IP address to an InetAddress object
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int val = Integer.parseInt(String.valueOf(userinput));
-                result1.setText(Integer.toBinaryString(val));
+
+                showresult();
             }
         });
     }

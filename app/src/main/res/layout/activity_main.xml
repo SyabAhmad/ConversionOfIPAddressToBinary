@@ -7,15 +7,16 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="299dp"
         android:layout_height="95dp"
         android:gravity="center_horizontal"
         android:text="@string/ip_conversions"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="32sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,6 +24,7 @@
         app:layout_constraintVertical_bias="0.088" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="233dp"
         android:layout_height="74dp"
         android:gravity="center_horizontal"
@@ -36,7 +38,7 @@
         app:layout_constraintHorizontal_bias="0.438"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.144" />
+        app:layout_constraintVertical_bias="0.094" />
 
     <androidx.constraintlayout.widget.Guideline
 
@@ -48,33 +50,65 @@
 
 
     <TextView
-        android:layout_width="221dp"
-        android:layout_height="31dp"
+        android:id="@+id/textView2"
+        android:layout_width="232dp"
+        android:layout_height="41dp"
         android:gravity="center_horizontal"
         android:text="@string/enter_values_here"
         android:textAlignment="center"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.311" />
-
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.062" />
 
     <EditText
-        android:id="@+id/value1"
-        android:layout_width="276dp"
-        android:layout_height="64dp"
-        android:hint="@string/_192"
-        android:inputType="text"
+        android:id="@+id/value2"
+        android:layout_width="82dp"
+        android:layout_height="48dp"
+        android:hint="@string/_10"
+        android:importantForAutofill="no"
+        android:inputType="number"
         android:textColorHint="#757575"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toEndOf="@+id/value"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <EditText
+        android:id="@+id/value"
+        android:layout_width="82dp"
+        android:layout_height="48dp"
+        android:hint="@string/_192"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.412" />
+        app:layout_constraintVertical_bias="0.327"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/value1"
+        android:layout_width="82dp"
+        android:layout_height="48dp"
+        android:hint="@string/_168"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/value"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327" />
 
     <Button
         android:id="@+id/btn1"
@@ -84,51 +118,110 @@
         android:text="@string/find_binary"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/value3"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/value"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.442"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/value3"
+        android:layout_width="82dp"
+        android:layout_height="48dp"
+        android:hint="@string/_1"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/value2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327" />
 
     <TextView
         android:id="@+id/resultFor1"
-        android:layout_width="221dp"
-        android:layout_height="31dp"
+        android:layout_width="327dp"
+        android:layout_height="41dp"
         android:gravity="center_horizontal"
         android:textAlignment="center"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.631" />
+        app:layout_constraintEnd_toEndOf="@+id/btn1"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        app:layout_constraintVertical_bias="0.058" />
 
     <TextView
-        android:id="@+id/classs"
-        android:layout_width="221dp"
-        android:layout_height="31dp"
+        android:id="@+id/resultFor3"
+        android:layout_width="344dp"
+        android:layout_height="42dp"
         android:gravity="center_horizontal"
         android:textAlignment="center"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.857" />
+        app:layout_constraintEnd_toEndOf="@+id/btn1"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        app:layout_constraintVertical_bias="0.421" />
 
     <TextView
-        android:id="@+id/Range"
-        android:layout_width="221dp"
-        android:layout_height="31dp"
+        android:id="@+id/resultFor4"
+        android:layout_width="348dp"
+        android:layout_height="36dp"
         android:gravity="center_horizontal"
         android:textAlignment="center"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn1"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/range"
+        android:layout_width="347dp"
+        android:layout_height="36dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn1"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        app:layout_constraintVertical_bias="0.762" />
+
+    <TextView
+        android:id="@+id/classes"
+        android:layout_width="343dp"
+        android:layout_height="41dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn1"
         app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.761" />
+        app:layout_constraintStart_toStartOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <TextView
+        android:id="@+id/resultFor2"
+        android:layout_width="335dp"
+        android:layout_height="38dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn1"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        app:layout_constraintVertical_bias="0.244" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
