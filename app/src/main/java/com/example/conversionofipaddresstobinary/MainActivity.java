@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     @SuppressLint("SetTextI18n")
-    void showresult(){
+    void actionToFind(){
         EditText ip0 = (EditText) findViewById(R.id.value);
         int ip0value = Integer.parseInt(String.valueOf(ip0.getText()));
         EditText ip1 = (EditText) findViewById(R.id.value1);
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                showresult();
+                actionToFind();
             }
         });
     }
