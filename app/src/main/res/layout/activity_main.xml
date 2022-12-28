@@ -49,12 +49,13 @@
         app:layout_constraintGuide_begin="169dp" />
 
 
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="232dp"
         android:layout_height="41dp"
         android:gravity="center_horizontal"
-        android:text="@string/enter_values_here"
+        android:text="Enter_values_Below"
         android:textAlignment="center"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,7 +69,7 @@
         android:id="@+id/value2"
         android:layout_width="82dp"
         android:layout_height="48dp"
-        android:hint="@string/_10"
+        android:hint="@string/_1"
         android:importantForAutofill="no"
         android:inputType="number"
         android:textColorHint="#757575"
@@ -118,11 +119,11 @@
         android:text="@string/find_binary"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/value3"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintEnd_toStartOf="@+id/btn2"
+        app:layout_constraintHorizontal_bias="0.309"
         app:layout_constraintStart_toStartOf="@+id/value"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.43"
+        app:layout_constraintVertical_bias="0.427"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -146,55 +147,13 @@
         android:layout_height="41dp"
         android:gravity="center_horizontal"
         android:textAlignment="center"
-        android:textSize="22sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btn1"
-        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintEnd_toEndOf="@+id/btn2"
+        app:layout_constraintHorizontal_bias="0.771"
         app:layout_constraintStart_toStartOf="@+id/btn1"
         app:layout_constraintTop_toBottomOf="@+id/btn1"
-        app:layout_constraintVertical_bias="0.058" />
-
-    <TextView
-        android:id="@+id/resultFor3"
-        android:layout_width="344dp"
-        android:layout_height="42dp"
-        android:gravity="center_horizontal"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btn1"
-        app:layout_constraintHorizontal_bias="0.447"
-        app:layout_constraintStart_toStartOf="@+id/btn1"
-        app:layout_constraintTop_toBottomOf="@+id/btn1"
-        app:layout_constraintVertical_bias="0.421" />
-
-    <TextView
-        android:id="@+id/resultFor4"
-        android:layout_width="348dp"
-        android:layout_height="36dp"
-        android:gravity="center_horizontal"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btn1"
-        app:layout_constraintHorizontal_bias="0.46"
-        app:layout_constraintStart_toStartOf="@+id/btn1"
-        app:layout_constraintTop_toBottomOf="@+id/btn1"
-        app:layout_constraintVertical_bias="0.6" />
-
-    <TextView
-        android:id="@+id/range"
-        android:layout_width="347dp"
-        android:layout_height="36dp"
-        android:gravity="center_horizontal"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btn1"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="@+id/btn1"
-        app:layout_constraintTop_toBottomOf="@+id/btn1"
-        app:layout_constraintVertical_bias="0.762" />
+        app:layout_constraintVertical_bias="0.065" />
 
     <TextView
         android:id="@+id/classes"
@@ -202,13 +161,13 @@
         android:layout_height="41dp"
         android:gravity="center_horizontal"
         android:textAlignment="center"
-        android:textSize="22sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btn1"
-        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintEnd_toEndOf="@+id/btn2"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/btn1"
         app:layout_constraintTop_toBottomOf="@+id/btn1"
-        app:layout_constraintVertical_bias="0.926" />
+        app:layout_constraintVertical_bias="0.934" />
 
     <TextView
         android:id="@+id/resultFor2"
@@ -216,12 +175,66 @@
         android:layout_height="38dp"
         android:gravity="center_horizontal"
         android:textAlignment="center"
-        android:textSize="22sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btn1"
-        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintEnd_toEndOf="@+id/btn2"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/btn1"
         app:layout_constraintTop_toBottomOf="@+id/btn1"
-        app:layout_constraintVertical_bias="0.244" />
+        app:layout_constraintVertical_bias="0.252" />
+
+    <TextView
+        android:id="@+id/resultFor3"
+        android:layout_width="344dp"
+        android:layout_height="42dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        app:layout_constraintVertical_bias="0.429" />
+
+    <TextView
+        android:id="@+id/resultFor4"
+        android:layout_width="348dp"
+        android:layout_height="36dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        app:layout_constraintVertical_bias="0.608" />
+
+    <TextView
+        android:id="@+id/range"
+        android:layout_width="347dp"
+        android:layout_height="36dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        app:layout_constraintVertical_bias="0.771" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="175dp"
+        android:layout_height="47dp"
+        android:text="Clear All"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
